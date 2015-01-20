@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/ratchet.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/first.css" />
+        <link rel="stylesheet" type="text/css" href="css/feeding.css" />
+        <title>AE</title>
+    </head>
+    <body>
+        <header class="bar bar-nav">
+            <span class="fa fa-arrow-left pull-left back-fd"></span>
+            <h1 class="title tl"> FEEDING DEVICE </h1>
+        </header>
+        <div class="sos">SOS</div>
+        <div class="ui-body">
+            <div class="table-view">
+                <div class="table-view-cell ui-card">
+                    <span class="ui-card-header">Frequency </span>
+                        <button class="pull-right btn-trend btn">
+                            <a href="#myModalexample" class="btn-trend">
+                                <i class="fa fa-line-chart fa-2x"></i>
+                            </a>
+                        </button>
+                    <table class="days">
+                        <tr>
+                            <th> 15-Jan </th>
+                            <th> 16-Jan </th>
+                            <th> 17-Jan </th>
+                            <th> 18-Jan </th>
+                        </tr>
+                        <tr class="days_value">
+                            <td> 20 </td>
+                            <td> 10 </td>
+                            <td> 40 </td>
+                            <td> 60 </td>
+                        </tr>
+                    </table>                     
+                </div>
+                <div class="table-view-cell ui-card">
+                    <span class="ui-card-header">Consumption  <span class="ui-card-header-ref"> (Kg/Day) </span></span>
+                     <button class="pull-right btn-trend btn">
+                            <a href="#myModalexample" class="btn-trend">
+                                <i class="fa fa-line-chart fa-2x"></i>
+                            </a>
+                        </button>
+                    <table class="days">
+                        <tr>
+                            <th> 15-Jan </th>
+                            <th> 16-Jan </th>
+                            <th> 17-Jan </th>
+                            <th> 18-Jan </th>
+                        </tr>
+                        <tr class="days_value">
+                            <td> 20 </td>
+                            <td> 10 </td>
+                            <td> 40 </td>
+                            <td> 60 </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-view-cell ui-card">
+                    <span class="ui-card-header">Quantity Remaining <span class="ui-card-header-ref"> (Kg) </span></span>
+                     <button class="pull-right btn-trend btn">
+                            <a href="#myModalexample" class="btn-trend">
+                                <i class="fa fa-line-chart fa-2x"></i>
+                            </a>
+                        </button>
+                    <table class="days">
+                        <tr>
+                            <th> 15-Jan </th>
+                            <th> 16-Jan </th>
+                            <th> 17-Jan </th>
+                            <th> 18-Jan </th>
+                        </tr>
+                        <tr class="days_value">
+                            <td> 20 </td>
+                            <td> 10 </td>
+                            <td> 40 </td>
+                            <td> 60 </td>
+                        </tr>
+                    </table><br/>
+                    <button class="btn btn-block pull-right btn-trend neon-text">Reorder</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModalexample" class="modal">
+            <header class="bar bar-nav">
+                <a class="fa fa-close pull-right modal-close" id="closeModal" href="#myModalexample"></a>
+                <h1 class="title">Trend</h1>
+            </header>
+
+            <div class="content">
+                <p class="content-padded">
+                    <canvas class="js-chart"></canvas>
+                </p>
+                <p class="label">Frequency varience</p>
+                <div class="ui-chart-button">
+                    <button class="btn btn-block btn-chart" id="js-daily">Daily</button>
+                    <button class="btn btn-block btn-chart" id="js-weekly">Weekly</button>
+                    <button class="btn btn-block btn-chart" id="js-monthly">Monthly</button>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/ratchet.min.js"></script>
+        <script type="text/javascript" src="js/Chart.min.js"></script>
+
+        <script type="text/javascript" src="js/first_page.js"></script>
+    </body>
+</html>

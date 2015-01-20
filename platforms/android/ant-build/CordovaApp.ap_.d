@@ -30,6 +30,7 @@
 /var/www/html/ae/platforms/android/assets/_where-is-www.txt \
 /var/www/html/ae/platforms/android/assets/www \
 /var/www/html/ae/platforms/android/assets/www/cordova_plugins.js \
+/var/www/html/ae/platforms/android/assets/www/feeding-device.html \
 /var/www/html/ae/platforms/android/assets/www/cordova.js \
 /var/www/html/ae/platforms/android/assets/www/fonts \
 /var/www/html/ae/platforms/android/assets/www/js \
@@ -47,13 +48,17 @@
 /var/www/html/ae/platforms/android/assets/www/fonts/FontAwesome.otf \
 /var/www/html/ae/platforms/android/assets/www/fonts/fontawesome-webfont.woff \
 /var/www/html/ae/platforms/android/assets/www/js/jquery-2.1.1.min.js \
+/var/www/html/ae/platforms/android/assets/www/js/Chart.min.js \
 /var/www/html/ae/platforms/android/assets/www/js/index.js \
+/var/www/html/ae/platforms/android/assets/www/js/ratchet.min.js \
 /var/www/html/ae/platforms/android/assets/www/js/first_page.js \
 /var/www/html/ae/platforms/android/assets/www/css/second.css \
 /var/www/html/ae/platforms/android/assets/www/css/ratchet-theme-android.min.css \
 /var/www/html/ae/platforms/android/assets/www/css/signup.css \
 /var/www/html/ae/platforms/android/assets/www/css/first.css \
+/var/www/html/ae/platforms/android/assets/www/css/ratchet.min.css \
 /var/www/html/ae/platforms/android/assets/www/css/index.css \
+/var/www/html/ae/platforms/android/assets/www/css/feeding.css \
 /var/www/html/ae/platforms/android/assets/www/css/font-awesome.min.css \
 /var/www/html/ae/platforms/android/assets/www/img/logo.png \
 /var/www/html/ae/platforms/android/ant-build/AndroidManifest.xml \

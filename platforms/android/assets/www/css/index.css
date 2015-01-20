@@ -90,3 +90,12 @@ input {
     color: #00BCD4 !important;
     cursor: pointer;
 }
+
+.btn-trend {
+    background: #4c4c4c !important;
+    color: #fff;
+    padding: 1px;
+    margin-right: -15px;
+    z-index: 120;
+    cursor: pointer !important;
+}

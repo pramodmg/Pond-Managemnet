@@ -84,7 +84,7 @@ $(function () {
         for(var i = 0; i < chartLength; i++) {
             var ctx = charts[i].getContext("2d");
             ctx.canvas.width = 300;
-			ctx.canvas.height = 200;
+			ctx.canvas.height = 300;
             window.myLine = new Chart(ctx).Line(chartData);
         }
     }

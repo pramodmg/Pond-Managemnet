@@ -214,6 +214,7 @@ body,html {
   width: 30px;
   height: 30px;
   margin: 0;
+  outline: none;
 }
 
 .switch.demo4 label {
@@ -246,4 +247,5 @@ body,html {
 
 .switch.demo4 input:checked ~ label {
   color: #2E8927;
+  outline: none;
 }

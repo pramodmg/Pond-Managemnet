@@ -3,39 +3,37 @@ body,html {
     margin: 0;
     padding: 0;
     border: 0;
-    /*font-size: 100%;*/
     font: inherit;
     vertical-align: baseline;
-    background: #44454A;
-    font-family: 'nexa_lightregular';
 }
 
 @font-face {
-  font-family: 'nexa_lightregular';
-      src: url('../fonts/nexa_free_light-webfont.eot');
-      src: url('../fonts/nexa_free_light-webfont.eot?#iefix') format('embedded-opentype'), 
-           url('../fonts/nexa_free_light-webfont.woff') format('woff'),
-           url('../fonts/nexa_light.otf') format('otf'),
-           url('../fonts/nexa_free_light-webfont.ttf') format('truetype'),
-           url('../fonts/nexa_free_light-webfont.svg#nexa_lightregular') format('svg');
-font-weight: normal;
-font-style: normal;
+    font-family: 'nexa_lightregular';
+        src: url('../fonts/Nexa-Light.otf');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.ui-login-body {
-    /*background: #44454A;*/
-    height: 100%;
-    font-family: 'nexa_lightregular';
-}
+/*login page css starts here*/
 
 .ui-login-header {
-    padding-top: 30px;
     text-align: center;
     color: white;
-    font-size: 40px;
+    /*font-size: 40px;*/
     text-transform: uppercase;
-    /*font-family: 'nexa_lightregular';*/
     font-weight: bold;
+    width: 150px;
+    height: 150px;
+    border-radius: 5% 35% 5%;
+    background: #00BCD4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ui-circle {
+    width: 100%;
+    padding-top: 10%;
 }
 
 .ui-username {
@@ -45,7 +43,6 @@ font-style: normal;
 input {
     font-size: 18px;
     padding: 10px 0px 10px 0px;
-    display: block;
     width: 100%;
     border: none;
     border-bottom: 1px solid #757575;
@@ -53,10 +50,13 @@ input {
 }
 
 .ui-user-textbox,.ui-pass-textbox {
-    background: #fff;
+    background: transparent;
+    outline: none;
+    color: white;
     box-sizing: border-box;
     line-height: 1;
-    padding: 15px;
+    padding: 20px;
+    padding-left: 30px;
 }
 
 .ui-password {
@@ -98,4 +98,207 @@ input {
     margin-right: -15px;
     z-index: 120;
     cursor: pointer !important;
+}
+
+
+#bg, #search-bg {
+  background-image: url('../img/back.jpg');
+  background-repeat: no-repeat;
+  background-size: 1080px auto;
+}
+
+#bg {
+  height: 100%;
+}
+
+#search-container {
+  position: relative;
+  height: 100%;
+}
+
+#search-bg {
+  /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+
+  /* Pull the background 70px higher to the same place as #bg's */
+  background-position: center -70px;
+
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  filter: url('/media/blur.svg#blur'); /* for Firefox */
+}
+
+#search {
+  /* Put this on top of the blurred layer */
+  position: relative;
+  height: 100%;
+  z-index: 100;
+  background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.75);
+}
+
+@media (max-width: 600px ) {
+  #bg { padding: 0px; }
+  #search-bg { background-position: center -10px; }
+}
+
+#search h2, #search h5, #search h5 a { text-align: center; color: #fefefe; font-weight: normal; }
+#search h2 { margin-bottom: 50px }
+#search h5 { margin-top: 70px }
+
+/*login page css ends here*/
+
+/*dashboard page css starts here*/
+
+.btn {
+    border: 1px solid rgba(247,247,247,.98);
+    font-size: 1.1em;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'roboto';
+        src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-thin';
+        src: url('../fonts/Roboto-Thin.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    font-family: 'roboto';
+    text-transform: uppercase;
+}
+
+.ui-bar-container {
+    width: 100%;
+    background: transparent;
+    margin: 0 auto;
+    position: relative;
+    top: 51px;
+}
+
+.ui-bar-left, .ui-bar-right {
+    border: 1px solid #ddd;
+    float: left;
+    height: 80px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.ui-bar-left {
+    width: 50%;
+    background: #fff;
+}
+
+.ui-bar-right {
+    width: 50%;
+    background: #fff;
+}
+
+.ui-bar-bar {
+    width: 5%;
+    background: #ddd;
+    height: 58px;
+    border: 1px solid #ddd;
+}
+
+.ui-bar-value {
+    position: relative;
+    bottom: 60px;
+    font-size: 2em;
+    font-family: 'roboto-thin' !important;
+    font-weight: 600;
+}
+
+.ui-bar-text {
+    position: relative;
+    bottom: 60px;
+    font-family: 'nexa_lightregular' !important;
+    text-transform: uppercase;
+}
+
+.active {
+    background: #00BCD4;
+}
+
+.ui-chart-button {
+    position: relative;
+    top: 55px;
+    width: 100%;
+    display: flex;
+}
+
+.ui-icon-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #eee;
+    font-size: 3em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*dashboard design ends here*/
+
+/*--responsive design--*/
+@media (min-width:1367px) and (max-width:1457px){
+
+}
+
+@media (max-width:1366px){
+
+}
+
+@media (min-width:1281px) and (max-width:1295px){
+
+}
+
+@media (max-width:1280px){
+
+}
+@media (max-width:1024px){
+
+}
+@media (max-width:800px){
+
+}
+@media (max-width:768px){
+
+}
+@media (max-width:640px){
+
+}
+@media (max-width:480px){
+    .ui-bar-value {
+        text-align: initial;
+        left: 20px;
+    }
+
+    .ui-bar-text {
+        text-align: initial;
+        left: 20px;
+    }
+
+    .ui-icon-circle {
+        margin: 10px;
+    }
+}
+@media (max-width:320px){
+
 }

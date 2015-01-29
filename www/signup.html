@@ -7,17 +7,41 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/signup.css" />
-
+        <link rel="stylesheet" type="text/css" href="css/ratchet.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>AE</title>
     </head>
     <body>
-        <header class="bar bar-nav ui-nav-bar">
-            <span class="fa fa-arrow-left fa-1x back"></span>
-            <h1 class="title tl">Sign up</h1>
+        <header class="bar bar-nav">
+            <button class="btn pull-left" id="js-back">
+                <span class="fa fa-chevron-left"></span>
+            </button>
+            <button class="btn pull-right" id="js-home">
+                <span class="fa fa-home"></span>
+            </button>
+            <h1 class="title">Sign up</h1>
         </header>
-        <div class="ui-signup-body">
+        <form>
+            <div class="ui-signup-card">
+                <div class="ui-username">
+                    <input type="text" placeholder="Username" class="ui-signup-user-textbox" required>
+                </div>
+                <div class="ui-password">
+                    <input type="password" placeholder="Password" class="ui-signup-pass-textbox" required>
+                </div>
+                <div class="ui-password">
+                    <input type="password" placeholder="Confirm Password" class="ui-signup-confirmpass-textbox" required>
+                </div>
+                <div class="ui-password">
+                    <input type="email" placeholder="Email" class="ui-signup-email-textbox" required>
+                </div>
+                <div class="ui-login-button">
+                    <button class="ui-login-but-elm js-login">SignUp</button>
+                </div>
+            </div>
+        </form>
+<!--         <div class="ui-signup-body">
             <div class="ui-login-card">
                 <div class="ui-username">
                     <input type="text" placeholder=" Username" class="ui-user-textbox" required>
@@ -35,10 +59,10 @@
                     <button class="ui-login-but-elm js-login">Signup</button>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="js/first_page.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

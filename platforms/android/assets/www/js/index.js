@@ -1,10 +1,14 @@
 $(function () {
     // body...
     $(".js-login").on("click",function(){
-        window.location.href = "../www/first_page.html";
+        window.location.href = "../www/dashboard.html";
     });
 
     $(".js-signup").on("click",function(){
         window.location.href = "../www/signup.html";
+    });
+
+    $("#js-back").on("click",function(){
+        window.location.href = "../www/index.html";
     });
 });

@@ -16,6 +16,8 @@ $(function () {
         "chartLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
     };
 
+    plotChart(defaults_daily.chartLabels, defaults_daily.chartData);
+    
     $(".back").on("click",function(){
         window.location.href = "../www/index.html";
     });

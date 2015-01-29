@@ -100,7 +100,6 @@ input {
     cursor: pointer !important;
 }
 
-
 #bg, #search-bg {
   background-image: url('../img/back.jpg');
   background-repeat: no-repeat;
@@ -162,6 +161,10 @@ input {
     outline: none;
 }
 
+.bar {
+    z-index: 999;
+}
+
 @font-face {
     font-family: 'roboto';
         src: url('../fonts/Roboto-Regular.ttf');
@@ -181,16 +184,34 @@ input {
     text-transform: uppercase;
 }
 
+.ui-top-bar-container {
+    border-bottom: 1px solid #ddd;
+    height: 221px;
+    z-index: 999;
+}
+
+.ui-middle-container {
+    height: 80px;
+    top: 10px !important;
+}
+
+.ui-bottom-border {
+    height: 85px;
+    top: 10px !important;
+    border-bottom: 1px solid #ddd;    
+}
+
 .ui-bar-container {
     width: 100%;
     background: transparent;
     margin: 0 auto;
     position: relative;
     top: 51px;
+    z-index: 999;
 }
 
 .ui-bar-left, .ui-bar-right {
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
     float: left;
     height: 80px;
     color: #000;
@@ -199,21 +220,34 @@ input {
     border-radius: 6px;
 }
 
+.ui-bar-middle {
+    float: left;
+    height: 160px;
+    width: 50%;
+    padding: 10px;
+}
+
+.ui-bar-bar-middle {
+    width: 2.5%;
+    height: 138px;
+    /*border: 1px solid #ddd;*/
+}
+
 .ui-bar-left {
     width: 50%;
-    background: #fff;
+    background: transparent;
 }
 
 .ui-bar-right {
     width: 50%;
-    background: #fff;
+    background: transparent;
 }
 
 .ui-bar-bar {
-    width: 5%;
+    width: 2%;
     background: #ddd;
     height: 58px;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
 }
 
 .ui-bar-value {
@@ -231,28 +265,132 @@ input {
     text-transform: uppercase;
 }
 
+.ui-bar-value-middle {
+    text-align: center;
+    position: relative;
+    bottom: 130px;
+    font-size: 3em;
+    font-family: 'roboto-thin' !important;
+}
+
+.ui-bar-text-middle {
+    text-align: center;
+    position: relative;
+    bottom: 125px;
+    font-size: 2.5em;
+    font-family: 'nexa_lightregular' !important;
+}
+
 .active {
     background: #00BCD4;
 }
 
 .ui-chart-button {
     position: relative;
-    top: 55px;
     width: 100%;
     display: flex;
+    z-index: 999;
 }
 
 .ui-icon-circle {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background: #eee;
+    background: transparent;
     font-size: 3em;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.bg-dashboard, .search-bg-dashboard {
+  background-image: url('../img/background-dashboard.jpg');
+  background-repeat: no-repeat;
+  background-size: 1080px auto;
+}
+
+.bg-dashboard {
+  height: 100%;
+}
+
+.search-container-dashboard {
+  position: relative;
+  height: 100%;
+}
+
+.search-bg-dashboard {
+  /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+
+  /* Pull the background 70px higher to the same place as #bg's */
+  background-position: center -70px;
+
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  filter: url('/media/blur.svg#blur'); /* for Firefox */
+}
+
+.search-dashboard {
+  /* Put this on top of the blurred layer */
+  position: relative;
+  height: 100%;
+  z-index: 100;
+}
+
+@media (max-width: 600px ) {
+  .bg-dashboard { padding: 0px; }
+  .search-bg-dashboard { background-position: center -10px; }
+}
+
+.search-dashboard h2, .search-dashboard h5, .search-dashboard h5 a { text-align: center; color: #fefefe; font-weight: normal; }
+.search-dashboard h2 { margin-bottom: 50px }
+.search-dashboard h5 { margin-top: 70px }
+/*
+
+.octagon {
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+    position: relative;
+    font-size: 3em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 20px;
+}
+
+.octagon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 29px solid red;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+    width: 42px;
+    height: 0;
+}
+
+.octagon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid red;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+    width: 42px;
+    height: 0;
+}*/
 
 /*dashboard design ends here*/
 
@@ -299,9 +437,20 @@ input {
 
 }
 @media (max-width:480px){
-    .ui-bar-value {
+    .ui-bar-value,.ui-bar-value-middle,.ui-bar-text-middle {
         text-align: initial;
         left: 20px;
+    }
+
+    .ui-bar-value-middle {
+        bottom: 148px;
+        font-size: 5.5em;
+    }
+
+    .ui-bar-text-middle {
+        bottom: 160px;
+        font-size: 2em;
+        left: 25px;
     }
 
     .ui-bar-text {

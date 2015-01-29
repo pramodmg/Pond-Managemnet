@@ -11,4 +11,8 @@ $(function () {
     $("#js-back").on("click",function(){
         window.location.href = "../www/index.html";
     });
+
+    $("#js-home").on("click",function(){
+        window.location.href = "../www/index.html";
+    });
 });

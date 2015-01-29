@@ -65,4 +65,5 @@
 /var/www/html/ae/platforms/android/assets/www/css/font-awesome.min.css \
 /var/www/html/ae/platforms/android/assets/www/img/logo.png \
 /var/www/html/ae/platforms/android/assets/www/img/back.jpg \
+/var/www/html/ae/platforms/android/assets/www/img/background-dashboard.jpg \
 /var/www/html/ae/platforms/android/ant-build/AndroidManifest.xml \

@@ -91,15 +91,6 @@ input {
     cursor: pointer;
 }
 
-.btn-trend {
-    background: #4c4c4c !important;
-    color: #fff;
-    padding: 1px;
-    margin-right: -15px;
-    z-index: 120;
-    cursor: pointer !important;
-}
-
 #bg, #search-bg {
   background-image: url('../img/back.jpg');
   background-repeat: no-repeat;
@@ -162,7 +153,7 @@ input {
 }
 
 .bar {
-    z-index: 999;
+    /*z-index: 999;*/
 }
 
 @font-face {
@@ -185,9 +176,9 @@ input {
 }
 
 .ui-top-bar-container {
-    border-bottom: 1px solid #ddd;
     height: 221px;
     z-index: 999;
+    color: #fff;
 }
 
 .ui-middle-container {
@@ -214,7 +205,7 @@ input {
     /*border: 1px solid #ddd;*/
     float: left;
     height: 80px;
-    color: #000;
+    color: #fff;
     text-align: center;
     padding: 10px;
     border-radius: 6px;
@@ -297,15 +288,21 @@ input {
     width: 100px;
     border-radius: 50%;
     background: transparent;
-    font-size: 3em;
+    font-size: 2.2em;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    color: #fff;
+}
+
+.ui-icon-text {
+    
 }
 
 .bg-dashboard, .search-bg-dashboard {
-  background-image: url('../img/background-dashboard.jpg');
+  background-image: url('../img/back.jpg');
   background-repeat: no-repeat;
   background-size: 1080px auto;
 }
@@ -342,6 +339,9 @@ input {
   position: relative;
   height: 100%;
   z-index: 100;
+
+  background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.75);
 }
 
 @media (max-width: 600px ) {
@@ -392,21 +392,211 @@ input {
     height: 0;
 }*/
 
+.ui-hr {
+    /*border-top: 1px solid #8c8b8b;
+    text-align: center;*/
+    background-image: url(../img/des.png);
+}
+
+.ui-hr:after {
+    /*content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg);*/
+}
+
 /*dashboard design ends here*/
 
 /*signup page design starts here*/
 
 .ui-signup-card {
-    position: relative;
-    top: 55px;
+  position: relative;
+  top: 55px;
 }
 
 .ui-signup-user-textbox, .ui-signup-pass-textbox,.ui-signup-confirmpass-textbox,.ui-signup-email-textbox {
-    color: black;
-    border-bottom: 1px solid #ddd !important;
+  color: black;
+  border-bottom: 1px solid #ddd !important;
 }
 
 /*signup page design ends here*/
+
+/*feeding device design starts here*/
+
+.ui-body {
+  padding-top: 30px;
+}
+
+.sos {
+  height: 60px;
+  z-index: 1200;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  margin-right: 30px;
+  position: fixed;
+  bottom: 17px;
+  left: 76%;
+  background: #DB4437;
+  cursor: pointer;
+  outline: none;
+}
+
+.table-view {
+  background-color: transparent !important;
+}
+
+.ui-card {
+  height: 150px;
+  width: 100%;
+  color: white;
+}
+
+.ui-card-header {
+  position: relative;
+  top: 15px;
+  left: 8px;
+  font-size: 1.1em;
+  font-family: 'roboto_medium';
+}
+
+.days {
+  margin-top: 30px;
+  word-spacing: 6px;
+  width: 100%;
+}
+
+.days_value {
+  text-align: center;
+}
+
+.value {
+  position: relative;
+  right: -30px;
+  word-spacing: 48px;
+  text-align: left;
+}
+
+.day_value {
+  display: inline-block;
+
+}
+
+.neon-text {
+  top: 90% !important;
+  right: 25% !important;
+  z-index: -1;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 1.2em/normal "Roboto", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 4px 4px 6px rgba(43,49,226,0.33) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.modal-close {
+  font-size: 2em;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  color: black;
+}
+
+.content-padded {
+  text-align: center;
+}
+
+.label {
+  text-align: center;
+  -webkit-transform: rotate(-90deg);
+  position: relative;
+  top: -200px;
+  right: 155px;
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.sos {
+  height: 60px;
+  z-index: 1200;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  margin-right: 30px;
+  position: fixed;
+  bottom: 17px;
+  left: 76%;
+  background: #DB4437;
+  cursor: pointer;
+  outline: none;
+}
+
+.js-go-back {
+  z-index: -1;
+}
+
+.ui-button {
+  display: inline-block;
+  width: 33.33%;
+  padding: 20px;
+  z-index: 999;
+}
+
+.btn-chart {
+  width: 100%;
+  outline: none;
+}
+
+.js-chart {
+  margin-left: 30px;
+}
+
+.btn-trend {
+  background: transparent;;
+  border: 0;
+  color: #fff;
+  padding: 1px;
+  margin-left: -15px;
+  z-index: 120;
+  cursor: pointer;
+  position: relative;
+  top: 27% !important;
+  right: 20px;
+  outline: none;
+  z-index: 10;
+  box-shadow: none;
+}
+
+.ui-graph-bar {
+  z-index: 999;
+}
+
+/*feeding device design ends here*/
 
 /*--responsive design--*/
 @media (min-width:1367px) and (max-width:1457px){

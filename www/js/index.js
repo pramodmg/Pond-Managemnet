@@ -54,22 +54,26 @@ $(function () {
         plotChart(defaults_daily.chartLabels, defaults_daily.chartData);
     });
 
+    $(".btn-trend").off("touchend");
     $(".btn-trend").on("touchend",function(){
         plotChart(defaults_daily.chartLabels, defaults_daily.chartData);
     });
 
+    $("#js-daily").off("click");
     $("#js-daily").on("click",function(){
         $(this).addClass("js-go-back");
         $("#myModalexample").addClass("active");
         plotChart(defaults_daily.chartLabels, defaults_daily.chartData);
     });
 
+    $("#js-weekly").off("click");
     $("#js-weekly").on("click",function(){
         $(this).addClass("js-go-back");
         $("#myModalexample").addClass("active");
         plotChart(defaults_weekly.chartLabels, defaults_weekly.chartData);
     });
 
+    $("#js-monthly").off("click");
     $("#js-monthly").on("click",function(){
         $(this).addClass("js-go-back");
         $("#myModalexample").addClass("active");

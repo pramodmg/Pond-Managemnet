@@ -62,4 +62,7 @@
 /var/www/html/ae/platforms/android/assets/www/img/back.jpg \
 /var/www/html/ae/platforms/android/assets/www/img/des.png \
 /var/www/html/ae/platforms/android/assets/www/img/background-dashboard.jpg \
+/var/www/html/ae/platforms/android/assets/www/img/back_img.jpg \
+/var/www/html/ae/platforms/android/assets/www/img/back_new.jpg \
+/var/www/html/ae/platforms/android/assets/www/img/shrimp_icon_nobackground.png \
 /var/www/html/ae/platforms/android/ant-build/AndroidManifest.xml \

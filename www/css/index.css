@@ -13,7 +13,16 @@ body,html {
   font-weight: normal;
   font-style: normal;
 }
+/*
+.icon{
+  font-family: fontAwesome;
+  font-size: 25px;
+  top: 0px;
+}
 
+.bar-tab {
+  height: 80px;
+}*/
 /*login page css starts here*/
 
 .ui-login-header {
@@ -95,9 +104,11 @@ input {
 }
 
 #bg, #search-bg {
-  background-image: url('../img/back_new.jpg');
-  background-repeat: no-repeat;
-  background-size: 1080px auto;
+  background: url(../img/back_new.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #bg {
@@ -302,9 +313,15 @@ input {
 }
 
 .bg-dashboard, .search-bg-dashboard {
-  background-image: url('../img/back_new.jpg');
+  /*background-image: url('../img/back_new.jpg');
   background-repeat: no-repeat;
-  background-size: 1080px auto;
+  background-size: 1080px auto;*/
+
+  background: url(../img/back_new.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .bg-dashboard {
@@ -374,6 +391,34 @@ input {
   transform: rotate(60deg);*/
 }
 
+.ui-icon-text {
+  text-align: center;
+}
+
+.ui-icon-label {
+  padding-top: 10px;
+}
+
+.ui-icon-container {
+  position: fixed;
+  bottom: 35px;
+  display: table;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  table-layout: fixed;
+  border-bottom: 0;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.ui-dashboard-link-button:nth-child(1){
+  border-right: 1px solid;
+}
+
+.ui-dashboard-link-button:nth-child(2){
+  border-right: 1px solid;
+}
 /*dashboard design ends here*/
 
 /*signup page design starts here*/
@@ -612,6 +657,14 @@ input {
 
   .ui-dashboard-button {
     top: 28px;
+  }
+
+  .ui-icon-text {
+    font-size: small;
+  }
+
+  .ui-icon-icon {
+    font-size: xx-large;
   }
 
 }

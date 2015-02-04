@@ -13,22 +13,34 @@ body,html {
   font-weight: normal;
   font-style: normal;
 }
+/*
+.icon{
+  font-family: fontAwesome;
+  font-size: 25px;
+  top: 0px;
+}
 
+.bar-tab {
+  height: 80px;
+}*/
 /*login page css starts here*/
 
 .ui-login-header {
   text-align: center;
   color: white;
-  /*font-size: 40px;*/
+  /* font-size: 40px; */
   text-transform: uppercase;
   font-weight: bold;
-  width: 150px;
+  width: 165px;
   height: 150px;
   border-radius: 5% 35% 5%;
-  background: #00BCD4;
+   background: #00BCD4; 
+  /*background-image: url(../img/shrimp_icon_nobackground.png);*/
   display: flex;
   justify-content: center;
   align-items: center;
+  /*background-position: center;*/
+  /*background-size: 160px 150px;*/
 }
 
 .ui-circle {
@@ -92,9 +104,11 @@ input {
 }
 
 #bg, #search-bg {
-  background-image: url('../img/back.jpg');
-  background-repeat: no-repeat;
-  background-size: 1080px auto;
+  background: url(../img/back_new.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #bg {
@@ -119,7 +133,7 @@ input {
   background-position: center -70px;
 
   filter: blur(10px);
-  -webkit-filter: blur(10px);
+  -webkit-filter: blur(1px);
   -moz-filter: blur(10px);
   filter: url('/media/blur.svg#blur'); /* for Firefox */
 }
@@ -130,7 +144,7 @@ input {
   height: 100%;
   z-index: 100;
   background: rgb(34,34,34); /* for IE */
-  background: rgba(34,34,34,0.75);
+  background: rgba(34,34,34,0.65);
 }
 
 @media (max-width: 600px ) {
@@ -299,9 +313,15 @@ input {
 }
 
 .bg-dashboard, .search-bg-dashboard {
-  background-image: url('../img/back.jpg');
+  /*background-image: url('../img/back_new.jpg');
   background-repeat: no-repeat;
-  background-size: 1080px auto;
+  background-size: 1080px auto;*/
+
+  background: url(../img/back_new.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .bg-dashboard {
@@ -325,9 +345,9 @@ input {
   /* Pull the background 70px higher to the same place as #bg's */
   background-position: center -70px;
 
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
   filter: url('/media/blur.svg#blur'); /* for Firefox */
 }
 
@@ -338,7 +358,7 @@ input {
   z-index: 100;
 
   background: rgb(34,34,34); /* for IE */
-  background: rgba(34,34,34,0.75);
+  background: rgba(34,34,34,0.65);
 }
 
 @media (max-width: 600px ) {
@@ -371,6 +391,33 @@ input {
   transform: rotate(60deg);*/
 }
 
+.ui-icon-text {
+  text-align: center;
+}
+
+.ui-icon-label {
+  padding-top: 10px;
+}
+
+.ui-icon-container {
+  position: fixed;
+  bottom: 35px;
+  display: table;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  table-layout: fixed;
+  border-bottom: 0;
+  font-size: 10px;
+}
+
+.ui-dashboard-link-button:nth-child(1){
+  border-right: 1px solid;
+}
+
+.ui-dashboard-link-button:nth-child(2){
+  border-right: 1px solid;
+}
 /*dashboard design ends here*/
 
 /*signup page design starts here*/
@@ -609,6 +656,14 @@ input {
 
   .ui-dashboard-button {
     top: 28px;
+  }
+
+  .ui-icon-text {
+    font-size: small;
+  }
+
+  .ui-icon-icon {
+    font-size: xx-large;
   }
 
 }

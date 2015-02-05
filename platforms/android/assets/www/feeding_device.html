@@ -21,17 +21,17 @@
                         <button class="btn pull-left" id="js-back">
                             <span class="fa fa-chevron-left"></span>
                         </button>
-                        <button class="btn pull-right">
+                        <button class="btn pull-right act">
                             <span class="fa fa-power-off"></span>
                         </button>
-                        <h1 class="title">Dashboard</h1>
+                        <h1 class="title">Feeding Device</h1>
                     </header>
                     <div class="sos">SOS</div>
                     <div class="ui-body">
                         <div class="table-view">
                             <div class="table-view-cell ui-card">
                                 <span class="ui-card-header">Frequency </span>
-                                    <button class="pull-right btn-trend btn">
+                                    <button class="pull-right btn-trend btn all">
                                         <a href="#myModalexample" class="btn-trend">
                                             <i class="fa fa-line-chart fa-2x"></i>
                                         </a>
@@ -53,7 +53,7 @@
                             </div>
                             <div class="table-view-cell ui-card">
                                 <span class="ui-card-header">Consumption  <span class="ui-card-header-ref"> (Kg/Day) </span></span>
-                                 <button class="pull-right btn-trend btn">
+                                 <button class="pull-right btn-trend btn all">
                                         <a href="#myModalexample" class="btn-trend">
                                             <i class="fa fa-line-chart fa-2x"></i>
                                         </a>
@@ -75,26 +75,17 @@
                             </div>
                             <div class="table-view-cell ui-card">
                                 <span class="ui-card-header">Quantity Remaining <span class="ui-card-header-ref"> (Kg) </span></span>
-                                 <button class="pull-right btn-trend btn">
+                                <!--  <button class="pull-right btn-trend btn">
                                         <a href="#myModalexample" class="btn-trend">
                                             <i class="fa fa-line-chart fa-2x"></i>
                                         </a>
-                                    </button>
-                                <table class="days">
-                                    <tr>
-                                        <th> 15-Jan </th>
-                                        <th> 16-Jan </th>
-                                        <th> 17-Jan </th>
-                                        <th> 18-Jan </th>
-                                    </tr>
-                                    <tr class="days_value">
-                                        <td> 20 </td>
-                                        <td> 10 </td>
-                                        <td> 40 </td>
-                                        <td> 60 </td>
-                                    </tr>
-                                </table><br/>
-                                <!-- <button class="btn btn-block pull-right btn-trend neon-text">Reorder</button> -->
+                                    </button> -->
+                                <div class="days">
+                                    <div id="progressbar">
+                                      <div class="progress-value"> 45 </div>
+                                    </div>
+                                    </progress>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -105,7 +96,7 @@
                                 <span class="fa fa-chevron-left"></span>
                             </button> -->
                             <button class="btn pull-right">
-                                <span class="fa fa-times" id="closeModal" href="#myModalexample"></span>
+                                <span class="fa fa-times closeModal" href="#myModalexample"></span>
                             </button>
                                 <h1 class="title">Consumption Trend</h1>
                         </header>

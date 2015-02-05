@@ -27,12 +27,11 @@
                         <h1 class="title">Dashboard</h1>
                     </header>
                     <div class="ui-top-bar-container">
-                        <div class="ui-bar-container">
-                            <div class="ui-bar-middle">
-                                <div class="ui-bar-bar-middle active"></div>
-                                <div class="ui-bar-value-middle">8</div>
-                                <div class="ui-bar-text-middle">DO</div>
-                            </div>
+                        <div class="ui-bar-container ui-bar-middle">
+                            <div class="ui-bar-bar-middle active"></div>
+                            <div class="ui-bar-value-middle">8</div>
+                            <div class="ui-bar-text-middle">DO</div>
+                            <div class="ui-bar-unit-middle"> (Mg/Ltr) </div>
                         </div>
                         <div class="ui-bar-container">
                             <div class="ui-bar-left">
@@ -44,6 +43,7 @@
                                 <div class="ui-bar-bar"></div>
                                 <div class="ui-bar-value">18</div>
                                 <div class="ui-bar-text">Humidity</div>
+                                <div class="ui-bar-unit"> (Percentage) </div>
                             </div>
                         </div>    
                     </div>
@@ -53,11 +53,13 @@
                             <div class="ui-bar-bar active"></div>
                             <div class="ui-bar-value">21</div>
                             <div class="ui-bar-text">Temperature</div>
+                            <div class="ui-bar-unit"> (Degree Celcius) </div>
                         </div>
                         <div class="ui-bar-right">
                             <div class="ui-bar-bar"></div>
                             <div class="ui-bar-value">8</div>
                             <div class="ui-bar-text">Hello</div>
+                            <div class="ui-bar-unit">(unit)</div>
                         </div>
                     </div>
                     <div class="ui-bar-container ui-bottom-border">
@@ -65,37 +67,29 @@
                             <div class="ui-bar-bar"></div>
                             <div class="ui-bar-value">8</div>
                             <div class="ui-bar-text">Consumption</div>
+                            <div class="ui-bar-unit"> (Kilogram) </div>
                         </div>
                         <div class="ui-bar-right">
                             <div class="ui-bar-bar"></div>
                             <div class="ui-bar-value">12.8</div>
-                            <div class="ui-bar-text">Frequency</div>
+                            <div class="ui-bar-text">Frequency </div>
+                            <div class="ui-bar-unit"> (Cycles) </div>
                         </div>
                     </div>
-                    <div class="ui-icon-container">
-                        <div class="ui-dashboard-button">
-                            <div class="ui-dashboard-link-button">
-                                <div class="fa fa-random ui-icon-icon" id="js-feeding"></div>
-                            </div>
-                            <div class="ui-dashboard-link-button">
-                                <div class="fa fa-upload ui-icon-icon" id="js-feeding"></div>
-                            </div>
-                            <div class="ui-dashboard-link-button">
-                                <div class="fa fa-recycle ui-icon-icon" id="js-feeding"></div>
-                            </div>
-                        </div>
-                        <div class="ui-dashboard-button">
-                            <div class="ui-dashboard-link-button">
-                                <div class="ui-icon-text"> Aeriation system </div>
-                            </div>
-                            <div class="ui-dashboard-link-button">
-                                <div class="ui-icon-text"> Feeding system </div>
-                            </div>
-                            <div class="ui-dashboard-link-button">
-                                <div class="ui-icon-text"> Pond Management </div>
-                            </div>
-                        </div>
-                    </div>
+                    <nav class="bar bar-tab">
+                      <div class="tab-item" id="js-aeration">
+                        <span class="icon fa fa-random"></span>
+                        <span class="tab-label"> Aeration System </span>
+                      </div>
+                      <div class="tab-item">
+                        <span class="icon fa fa-upload" id="js-feeding"></span>
+                        <span class="tab-label"> Feeding System </span>
+                      </div>
+                      <div class="tab-item">
+                        <span class="icon fa fa-recycle" id="js-pond"></span>
+                        <span class="tab-label"> Pond Management </span>
+                      </div>
+                    </nav>
                 </div>
             </div>
         </div>

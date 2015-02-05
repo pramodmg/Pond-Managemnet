@@ -20,9 +20,22 @@ $(function () {
         window.location.href = "../www/feeding_device.html";
     });
 
+    $("#js-aeration").on("click",function(){
+        window.location.href = "../www/aeration_system.html";
+    });
+
+    $("#js-pond").on("click",function(){
+        window.location.href = "../www/pond_management.html";
+    });
+
     var defaults_daily = {
         "chartData": [65, 159, 124, 81, 56, 55, 40],
         "chartLabels": ["14-Jan", "15-Jan", "16-Jan", "17-Jan", "18-Jan", "19-Jan", "20-Jan"]
+    };
+
+    var do_values = {
+        "chartData": [65, 159, 124, 81, 56, 55, 40],
+        "chartLabels": ["2", "4", "6", "8", "10", "12", "14"]
     };
 
     var defaults_weekly = {
@@ -47,15 +60,25 @@ $(function () {
         window.location.href = "../www/feeding-device.html";
     });
 
+    $(".cor").on("click",function(){
+        $(this).addClass("js-go-back");
+        $("#corelation").addClass("active");
+        plotChart(do_values.chartLabels, do_values.chartData);
+    });
+
+    $(".cor").on("touchend",function(){
+        plotChart(do_values.chartLabels, do_values.chartData);
+    });
+
     // $("#myModalTrend").hide();
-    $(".btn-trend").on("click",function(){
+    $(".all").on("click",function(){
         $(this).addClass("js-go-back");
         $("#myModalexample").addClass("active");
         plotChart(defaults_daily.chartLabels, defaults_daily.chartData);
     });
 
-    $(".btn-trend").off("touchend");
-    $(".btn-trend").on("touchend",function(){
+    $(".all").off("touchend");
+    $(".all").on("touchend",function(){
         plotChart(defaults_daily.chartLabels, defaults_daily.chartData);
     });
 
@@ -80,7 +103,7 @@ $(function () {
         plotChart(defaults_monthly.chartLabels, defaults_monthly.chartData);
     });
 
-    $("#closeModal").on("click", function() {
+    $(".closeModal").on("click", function() {
         var elmId = $(this).attr("href");
         $(elmId).removeClass("active");
     });

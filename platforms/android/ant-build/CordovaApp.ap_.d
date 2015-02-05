@@ -30,14 +30,15 @@
 /var/www/html/ae/platforms/android/assets/_where-is-www.txt \
 /var/www/html/ae/platforms/android/assets/www \
 /var/www/html/ae/platforms/android/assets/www/cordova_plugins.js \
+/var/www/html/ae/platforms/android/assets/www/aeration_system.html \
 /var/www/html/ae/platforms/android/assets/www/dashboard.html \
+/var/www/html/ae/platforms/android/assets/www/pond_management.html \
 /var/www/html/ae/platforms/android/assets/www/cordova.js \
 /var/www/html/ae/platforms/android/assets/www/fonts \
 /var/www/html/ae/platforms/android/assets/www/js \
 /var/www/html/ae/platforms/android/assets/www/feeding_device.html \
 /var/www/html/ae/platforms/android/assets/www/css \
 /var/www/html/ae/platforms/android/assets/www/img \
-/var/www/html/ae/platforms/android/assets/www/first_page.html \
 /var/www/html/ae/platforms/android/assets/www/signup.html \
 /var/www/html/ae/platforms/android/assets/www/index.html \
 /var/www/html/ae/platforms/android/assets/www/fonts/Roboto-Regular.ttf \
